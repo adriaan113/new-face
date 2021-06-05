@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: bisque;
   width: 100%;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .wrapper {
@@ -14,6 +16,26 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
+}
+
+.welcome {
+  position: absolute;
+  top: -2%;
+  z-index: -1;
+  font-size: 23vw;
+  color: #ffcd91;
+  text-shadow: 5px 10px #ffb55e;
+}
+@media (min-width: 540px) {
+  .welcome {
+    display: flex;
+    flex-flow: row nowrap;
+    top: 15%;
+    font-size: 30vw;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
 }
 
 .face {
@@ -68,10 +90,6 @@ body {
   top: 2rem;
   left: 2rem;
   width: 80%;
-}
-
-h1 {
-  color: blue;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

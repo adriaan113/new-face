@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: bisque;
     width: 100%;
-    
+    font-family: 'ABeeZee', sans-serif;
 }
 
 .wrapper{
@@ -16,6 +17,26 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+.welcome{
+    position: absolute;
+    top: -2%;
+    z-index: -1;
+    font-size: 23vw;
+    color: darken(bisque, 10%);
+    text-shadow: 5px 10px darken(bisque, 20%);;
+    @media(min-width: 540px){
+        display: flex;
+        flex-flow: row nowrap;
+        top: 15%; 
+        font-size: 30vw;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+}
+
+
 
 .face{
     display: grid;
@@ -70,8 +91,4 @@ body{
             width: 80%;
         }
     }
-}
-
-h1{
-    color: blue;
 }
