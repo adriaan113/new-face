@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.face {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.face .eyes {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.face .eyes .left-eye,
+.face .eyes .right-eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face .eyes .left-eye svg:nth-child(2),
+.face .eyes .right-eye svg:nth-child(2) {
+  position: relative;
+  left: -50%;
+}
+.face .nose {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  align-self: flex-start;
+  margin-left: 1rem;
+  margin-top: 6rem;
+  width: 70%;
+}
+.face .mouth {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  margin-top: 3rem;
+}
+.face .mouth .lips,
+.face .mouth .hole,
+.face .mouth .teeth {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.face .mouth .hole,
+.face .mouth .teeth {
+  top: 2rem;
+  left: 2rem;
+  width: 80%;
+}
+
+h1 {
+  color: blue;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */

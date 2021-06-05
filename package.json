@@ -1,0 +1,25 @@
+{
+  "name": "new-face",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriaan113/new-face.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriaan113/new-face/issues"
+  },
+  "homepage": "https://github.com/adriaan113/new-face#readme",
+  "dependencies": {
+    "gsap": "^3.6.1"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}
